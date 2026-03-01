@@ -125,7 +125,8 @@ DATABASES = {
 }
 
 DEBUG = False
-ALLOWED_HOSTS = ['student-work-bank.onrender.com']
+ALLOWED_HOSTS = ['*']
+
 import dj_database_url
 
 DATABASES = {
@@ -135,4 +136,4 @@ DATABASES = {
 }
 
 DEBUG = False
-ALLOWED_HOSTS = ['student-work-bank.onrender.com']
+ALLOWED_HOSTS = ['*']
