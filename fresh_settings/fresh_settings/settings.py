@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'student_workbank.urls'
+ROOT_URLCONF = 'fresh_settings.urls'
 
 TEMPLATES = [
     {
@@ -66,7 +66,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'student_workbank.wsgi.application'
+WSGI_APPLICATION = 'fresh_settings.wsgi.application'
 
 
 # Database
@@ -115,13 +115,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
-import dj_database_url
-
-DATABASES = {
-    'default': dj_database_url.config(
-        default='sqlite:///' + str(BASE_DIR / 'db.sqlite3')
-    )
-}
-
-DEBUG = False
-ALLOWED_HOSTS = ['student-work-bank.onrender.com']
