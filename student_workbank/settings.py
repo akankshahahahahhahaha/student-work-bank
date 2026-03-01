@@ -126,3 +126,13 @@ DATABASES = {
 
 DEBUG = False
 ALLOWED_HOSTS = ['student-work-bank.onrender.com']
+import dj_database_url
+
+DATABASES = {
+    'default': dj_database_url.config(
+        default='sqlite:///' + str(BASE_DIR / 'db.sqlite3')
+    )
+}
+
+DEBUG = False
+ALLOWED_HOSTS = ['student-work-bank.onrender.com']
